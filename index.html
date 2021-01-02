@@ -27,7 +27,7 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col col-md-4 col-xl-2 col-xs-12 mt-4">
-                    <a role="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#reserveModal">Reserve Campsite</a>
+                    <a role="button" class="btn btn-info btn-lg" id="reserveButton">Reserve Campsite</a>
                 </div>
             </div>
         </div>
@@ -36,7 +36,7 @@
     <div id="reserveModal" class="modal fade" role="dialog">
         <div class="modal-lg modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header bg-info text-white">
+                <div class="modal-header">
                     <h3 class="modal-title">Reserve a Campsite</h3>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -101,8 +101,9 @@
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address fa-lg"></i> Contact</a></li>
                 </ul>
                 <span class="navbar-text ml-auto">
-                    <a role="button" data-toggle="modal" data-target="#loginModal">
-                        <i class="fa fa-sign-in"></i> Login
+                    <a role="button" id="loginButton">
+                        <i class="fa fa-sign-in"></i>
+                        Login
                     </a>
                 </span>
             </div>
@@ -231,42 +232,6 @@
                     <div class="media-body align-self-center">
                         <h3>Bootstrap Outfitters</h3>
                         <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row row-content align-items-center">
-            <div class="col col-sm-6 mx-auto">
-                <div class="card">
-                    <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
-                    <div class="card-body">
-                        <form id="reserveForm">
-                            <div class="form-group row form-row">
-                                <label for="numCampers" class="col-sm-6 col-form-label">Number of Campers</label>
-                                <div class="col-sm-6">
-                                    <select class="form-control" name="numCampers" id="numCampers">
-                                        <option>Select...</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group row form-row">
-                                <label for="date" class="col-sm-6 col-form-label">Date</label>
-                                <div class="col-sm-6">
-                                    <input class="form-control" type="date" id="date" name="date" placeholder="date" />
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col">
-                                    <button class="btn btn-primary" type="submit">Search</button>
-                                </div>
-                            </div>
-                        </form>
                     </div>
                 </div>
             </div>
